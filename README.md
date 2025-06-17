@@ -6,7 +6,7 @@ This project focuses on predicting the presence of heart disease in patients usi
 
 ## 📂 Dataset
 
-We are using the [Heart Failure Prediction Dataset](https://www.kaggle.com/datasets/data855/heart-disease) from Kaggle. The dataset contains 918 observations and 12 features, including:
+We are using the [Heart Failure Prediction Dataset](https://www.kaggle.com/datasets/data855/heart-disease) from Kaggle. The dataset contains 918 observations and 14 features, including:
 
 - `Age`
 - `Sex`
