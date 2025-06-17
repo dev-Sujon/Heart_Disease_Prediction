@@ -1,61 +1,88 @@
-# ❤️ Heart Disease Prediction
+# ❤️ Heart Disease Prediction - Cleveland Dataset
 
-This project focuses on predicting the presence of heart disease in patients using a dataset from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction). The aim is to build an accurate machine learning model that can help in early diagnosis and decision support in healthcare.
-
----
-
-## 📂 Dataset
-
-We are using the [Heart Failure Prediction Dataset](https://www.kaggle.com/datasets/data855/heart-disease) from Kaggle. The dataset contains 918 observations and 12 features, including:
-
-- `Age`
-- `Sex`
-- `ChestPainType`
-- `Trestbps`
-- `Cholesterol`
-- `FastingBS`
-- `RestingECG`
-- `Thalach`
-- `exang`
-- `Oldpeak`
-- `ST_Slope`
-- `ca`
-- `Thal`
-- `Target` 
----
-
-## 📌 Objective
-
-Predict whether a patient has heart disease (`Target = 1`) or not (`Target = 0`) based on clinical and lifestyle features.
+This project aims to predict the **presence of heart disease** in a patient using machine learning techniques on the **Cleveland Heart Disease dataset**. This is a classic dataset in the medical ML field, originally contributed by multiple institutions and frequently used in ML research.
 
 ---
 
-## 📊 Project Workflow
+## 📊 Dataset Overview
 
-1. **Exploratory Data Analysis (EDA)**
-2. **Data Preprocessing**
-3. **Feature Engineering**
-4. **Model Selection**
-5. **Model Evaluation**
-6. **Hyperparameter Tuning**
-7. **Model Deployment (Optional)**
+The original dataset contains **76 attributes**, but only a subset of **14** features is commonly used in published experiments.
+
+- **Source**: UCI Machine Learning Repository
+- **Focus**: Cleveland database (most commonly used in ML research)
+- **Target (`goal`)**: Indicates the presence of heart disease, with values from `0` (no disease) to `4` (severe condition).
+    - For binary classification:
+      - `0` = No disease
+      - `1–4` = Disease presence
+
+### 🏥 Acknowledgements
+
+**Creators**:
+- Hungarian Institute of Cardiology, Budapest — *Andras Janosi, M.D.*
+- University Hospital, Zurich — *William Steinbrunn, M.D.*
+- University Hospital, Basel — *Matthias Pfisterer, M.D.*
+- V.A. Medical Center, Long Beach and Cleveland Clinic Foundation — *Robert Detrano, M.D., Ph.D.*
+
+**Donor**:  
+David W. Aha ([aha@ics.uci.edu](mailto:aha@ics.uci.edu))
 
 ---
 
-## ⚙️ Tech Stack
+## 🎯 Project Objective
 
-- Python 🐍
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn
-- Machine Learning
+Build a machine learning model to predict heart disease and identify potential **early signs** or **risk patterns** in cardiovascular data.
+
+**Bonus Goal**: Explore if there are any trends or predictors related to **specific cardiovascular events** or **heart health** conditions.
 
 ---
 
-## 🚀 How to Run
+## 🔍 Workflow
 
-### 1. Clone the repo
+1. Data Cleaning & Preprocessing
+2. Exploratory Data Analysis (EDA)
+3. Feature Engineering (select the 14 key features)
+4. Model Training (Logistic Regression, Random Forest, XGBoost, etc.)
+5. Evaluation (Accuracy, Precision, Recall, ROC-AUC)
+6. (Optional) Streamlit App for real-time predictions
+
+---
+
+## 📂 Features Used (Standard 14)
+
+Typical attributes used in ML studies include:
+
+- `age`
+- `sex`
+- `cp` (chest pain type)
+- `trestbps` (resting blood pressure)
+- `chol` (serum cholesterol)
+- `fbs` (fasting blood sugar)
+- `restecg` (resting electrocardiographic results)
+- `thalach` (maximum heart rate)
+- `exang` (exercise-induced angina)
+- `oldpeak` (ST depression)
+- `slope` (slope of the ST segment)
+- `ca` (number of major vessels)
+- `thal`
+- `target` (presence of heart disease)
+
+---
+
+## 🛠 Tech Stack
+
+- **Python**
+- **Pandas, NumPy**
+- **Matplotlib, Seaborn**
+- **Scikit-learn**
+- **XGBoost / LightGBM**
+- **Streamlit** *(for app deployment)*
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/dev-Sujon/Heart_Disease_Prediction
+git clonehttps://github.com/dev-Sujon/Heart_Disease_Prediction
 cd heart_Disease_Prediction
